@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+body {
+    background-color: #212338;
+    color: #fff;
+    overflow-x: hidden;
+    height: 100vh; /* Set body height to 100% of viewport height */
+}
+
+.navbar {
+    background-color: #212338;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.col {
+    flex: none;
+}
+
+#Editor {
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust height to leave space for navbar */
+    min-height: 600px; /* Ensure it doesn't go below 600px */
+}
+
+.sidearea {
+    width: 20%;
+    height: calc(100vh - 60px); /* Adjust height to leave space for navbar */
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden;
+}
+
+.editorside {
+    width: 80%;
+    height: calc(100vh - 60px); /* Adjust height to leave space for navbar */
+}
+
+.list-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 35px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+    height: calc(100% - 20px); /* Ensure it fits within the parent */
+    
+    /* overflow-y: auto; Allows vertical scrolling */
+    overflow: hidden; /* Allow scrolling within the list if needed */
+}
+
+.list-group i {
+    margin: 5px;
+    cursor: pointer;
+}
+.CodeMirror{
+    height: 600px;
+}
